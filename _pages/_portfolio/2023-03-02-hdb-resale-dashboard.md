@@ -5,7 +5,7 @@ date:   2023-03-02 10:00:00 +0800
 classes: wide
 permalink: /hdb-resale/
 excerpt: Custom excerpt here.
-tags: pandas streamlit plotly vega-altair dashboard
+tags: python streamlit data-visualisation plotly vega-altair pandas
 ---
 
 {% include figure image_path="../assets/images/hdb_screenshot.png" alt="Dashboard screen capture" %}
