@@ -3,6 +3,7 @@ layout: single
 title:  Time Series Analysis with Prophet
 date:   2023-03-04 10:00:00 +0800
 permalink: /time-series-prophet/
+excerpt: Time series forecast of Singapore's electrical demand using data scraped from the Energy Market Authority of Singapore.
 tags: python kaggle pandas selenium prophet
 ---
 

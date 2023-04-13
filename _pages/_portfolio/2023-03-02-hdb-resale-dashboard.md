@@ -2,9 +2,8 @@
 layout: single
 title:  HDB Resale Dashboard
 date:   2023-03-02 10:00:00 +0800
-classes: wide
 permalink: /hdb-resale/
-excerpt: Custom excerpt here.
+excerpt: A live data visualisation dashboard displaying HDB resale transactions extracted from Data.gov.sg.
 tags: python streamlit data-visualisation plotly vega-altair pandas
 ---
 

@@ -7,22 +7,21 @@ title: ""
 author_profile: true
 permalink: /
 classes: wide
-
-feature_row:
-  - image_path: /assets/images/hdb_screenshot.png
-    alt: HDB flat
-    title: HDB Resale Dashboard
-    excerpt: A live dashboard tracking HDB resale transactions extracted from Data.gov.sg
-    url: /hdb-resale/
-    btn_label: Open
-    btn_class: btn--inverse
 ---
 
-Hey there! I am a Data Science Immersive graduate from General Assembly Singapore and new to the data community!
-With over 7 years experience in Hospitality, this has been quite a major shift in my career trajectory, but
-I've been fully enjoying my time picking up new skills like Python and SQL.
+## Who Am I
 
-This site is a showcase of the projects that I have been working on in my free time, and comments
-or suggestions for improvement are always welcomed!
+Hey there, my first name is Ee Shawn, but just call me Shawn. I am a career switcher who
+traded in 7 successful years in hospitality for a new adventure in coding. As a naturally
+curious individual, I'm excited to tinker with projects, learn new skills and figure out
+how to make things work.
 
-{% include feature_row %}
+When I'm not in front of the screen, I love hitting the yoga mat or walking in nature for
+some fresh air. I'm a bit of a photography buff, so be sure to check out some of my shots
+over on my [Flickr](https://www.flickr.com/photos/ee_shawn/)!
+
+This is a collection of various projects I have been working on in my free time, any
+comments or suggestions for improvement are always welcomed.
+
+If you're looking for a motivated and adaptable team player, look no further. Let's
+connect and see how we can work together!

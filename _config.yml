@@ -22,21 +22,19 @@ include: ["_pages"]
 
 locale: en-GB
 title: eeshawn
+subtitle: a collection of bits & pieces
 masthead_title: eeshawn
-email: eeshawn11@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hey there! Welcome to my portfolio showcasing my skills in various machine learning 
   techniques, including projects such as time series forecasting, deep learning and 
   natural language processing.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  eeshawn11
 linkedin_url: https://www.linkedin.com/in/shawn-sing/
 search: true
 
 # Build settings
 remote_theme: mmistakes/minimal-mistakes@4.24.0
-# theme: jekyll-theme-minimal
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
@@ -45,13 +43,17 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
 
 collections_dir: _pages
 
 author:
   name: Ee Shawn
   avatar: /assets/images/headshot.png
-  bio: Data Professional based in Singapore.
+  bio: Doing the things that make me happy.
+  location: Singapore
   links:
     - label: GitHub
       icon: fab fa-github
@@ -68,19 +70,13 @@ defaults:
       path: ""
       type: posts
     values:
-      author_profile: true
-      show_date: false
-      comments: false
-      share: false
-  - scope:
-      path: ""
-      type: portfolio
-    values:
       layout: single
       author_profile: true
       show_date: false
       comments: false
       share: false
+      classes: wide
+      read_time: true
 
 analytics:
   provider: google-gtag
