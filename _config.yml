@@ -18,21 +18,71 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: eeshawn - portfolio
+include: ["_pages"]
+
+locale: en-GB
+title: eeshawn
+masthead_title: eeshawn
 email: eeshawn11@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal portfolio showcasing my skills in various machine learning techniques,
-  including projects such as time series forecasting, deep learning and natural 
-  language processing.
+  Hey there! Welcome to my portfolio showcasing my skills in various machine learning 
+  techniques, including projects such as time series forecasting, deep learning and 
+  natural language processing.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  eeshawn11
-linkedin_username: shawn-sing
+linkedin_url: https://www.linkedin.com/in/shawn-sing/
+search: true
 
 # Build settings
-remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+# theme: jekyll-theme-minimal
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+collections_dir: _pages
+
+author:
+  name: Ee Shawn
+  avatar: /assets/images/headshot.png
+  bio: Data Professional based in Singapore.
+  links:
+    - label: GitHub
+      icon: fab fa-github
+      url: https://github.com/eeshawn11/
+    - label: LinkedIn
+      icon: fab fa-linkedin
+      url: https://www.linkedin.com/in/shawn-sing/
+
+atom_feed:
+  hide: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author_profile: true
+      show_date: false
+      comments: false
+      share: false
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      show_date: false
+      comments: false
+      share: false
+
+google_analytics: G-ZMKLD63FXP
 
 # Exclude from processing.
 # The following items will not be processed, by default.
