@@ -30,7 +30,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   natural language processing.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-linkedin_url: https://www.linkedin.com/in/shawn-sing/
+repository: eeshawn11/eeshawn11.github.io
 search: true
 
 # Build settings
@@ -61,6 +61,10 @@ author:
     - label: LinkedIn
       icon: fab fa-linkedin
       url: https://www.linkedin.com/in/shawn-sing/
+
+tag_archive:
+  type: liquid
+  path: /tags/
 
 atom_feed:
   hide: true
