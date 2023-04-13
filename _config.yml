@@ -82,7 +82,11 @@ defaults:
       comments: false
       share: false
 
-google_analytics: G-ZMKLD63FXP
+analytics:
+  provider: google-gtag
+  google:
+    tracking_id: G-ZMKLD63FXP
+    anonymize_ip: false # default
 
 # Exclude from processing.
 # The following items will not be processed, by default.
