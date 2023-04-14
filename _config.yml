@@ -29,7 +29,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   techniques, including projects such as time series forecasting, deep learning and 
   natural language processing.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://eeshawn.com # the base hostname & protocol for your site, e.g. http://example.com
 repository: eeshawn11/eeshawn11.github.io
 search: true
 
