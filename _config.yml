@@ -22,12 +22,10 @@ include: ["_pages"]
 
 locale: en-GB
 title: eeshawn
-subtitle: a collection of bits & pieces
-masthead_title: eeshawn
 description: >- # this means to ignore newlines until "baseurl:"
-  Hey there! Welcome to my portfolio showcasing my skills in various machine learning 
-  techniques, including projects such as time series forecasting, deep learning and 
-  natural language processing.
+  Hey there! Welcome to my portfolio showcasing my learning journey as I work
+  on various machine learning techniques, including projects such as time series
+  forecasting, computer vision and natural language processing.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://eeshawn.com # the base hostname & protocol for your site, e.g. http://example.com
 repository: eeshawn11/eeshawn11.github.io
@@ -38,6 +36,8 @@ remote_theme: mmistakes/minimal-mistakes@4.24.0
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
+
+logo: assets/images/logo.png
 
 collections:
   portfolio:
@@ -54,13 +54,9 @@ author:
   avatar: /assets/images/headshot.png
   bio: Doing the things that make me happy.
   location: Singapore
-  links:
-    - label: GitHub
-      icon: fab fa-github
-      url: https://github.com/eeshawn11/
-    - label: LinkedIn
-      icon: fab fa-linkedin
-      url: https://www.linkedin.com/in/shawn-sing/
+  github: eeshawn11
+  linkedin: shawn-sing
+  flickr: ee_shawn
 
 tag_archive:
   type: liquid
@@ -72,7 +68,18 @@ atom_feed:
 defaults:
   - scope:
       path: ""
-      type: posts
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      show_date: false
+      comments: false
+      share: false
+      classes: wide
+      read_time: true
+  - scope:
+      path: ""
+      type: portfolio
     values:
       layout: single
       author_profile: true
