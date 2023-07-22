@@ -1,0 +1,7 @@
+main:
+  - title: Home
+    url: /
+  - title: Data Science
+    url: /portfolio/
+  - title: Side Projects
+    url: /projects/

@@ -18,22 +18,82 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: eeshawn - portfolio
-email: eeshawn11@gmail.com
+include: ["_pages"]
+
+locale: en-GB
+title: eeshawn
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal portfolio showcasing my skills in various machine learning techniques,
-  including projects such as time series forecasting, deep learning and natural 
-  language processing.
+  Hey there! Welcome to my portfolio showcasing my learning journey as I work
+  on various machine learning techniques, including projects such as time series
+  forecasting, computer vision and natural language processing.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  eeshawn11
-linkedin_username: shawn-sing
+url: https://eeshawn.com # the base hostname & protocol for your site, e.g. http://example.com
+repository: eeshawn11/eeshawn11.github.io
+search: true
 
 # Build settings
-remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 plugins:
-  - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-include-cache
+
+logo: assets/images/logo.png
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+collections_dir: _pages
+
+author:
+  name: Ee Shawn
+  avatar: /assets/images/headshot.png
+  bio: Doing the things that make me happy.
+  location: Singapore
+  github: eeshawn11
+  linkedin: shawn-sing
+  flickr: ee_shawn
+
+tag_archive:
+  type: liquid
+  path: /tags/
+
+atom_feed:
+  hide: true
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      show_date: false
+      comments: false
+      share: false
+      classes: wide
+      read_time: true
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      show_date: false
+      comments: false
+      share: false
+      classes: wide
+      read_time: true
+
+analytics:
+  provider: google-gtag
+  google:
+    tracking_id: G-ZMKLD63FXP
+    anonymize_ip: false # default
 
 # Exclude from processing.
 # The following items will not be processed, by default.
